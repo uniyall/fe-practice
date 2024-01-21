@@ -1,0 +1,44 @@
+<!--Making HTML Form-->>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Practice</title>
+  </head>
+  <body>
+    <form>
+      <label for="full_name">Full Name:</label>
+      <input type="text" value="Your Name" id="full_name" required />
+      <br />
+      <label for="email_add" required>Email:</label>
+      <input type="email" value="example@gmail.com" id="email_add" />
+      <br />
+      <label for="contact_number" required>Contact Number:</label>
+      <input type="tel" value="Your Number" id="contact_number" />
+      <br />
+      <label for="company">Company Name:</label>
+      <input type="text" value="Google" id="company" />
+      <br />
+      <label for="job_title">Job Title:</label>
+      <input type="text" value="FrontEnd Developer" id="job_title" />
+      <br />
+      <label for="type">Type of registration:</label>
+      <select id="type">
+        <option value="general">General</option>
+        <option value="vip">VIP</option>
+        <option value="student">Student</option>
+      </select>
+      <br />
+      <p>Dietary Preferences:</p>
+      <label for="veg">Vegetarian</label>
+      <input type="checkbox" value="veg" />
+      <label for="vegen">Vegen</label>
+      <input type="checkbox" value="vegen" />
+      <label for="gluten-free">Gluten-Free</label>
+      <input type="checkbox" value="gluten-free" />
+      <br />
+      <textarea placeholder="Any additional Comments"></textarea>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
