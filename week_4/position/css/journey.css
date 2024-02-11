@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 5rem;
+  font-family: "Source Code Pro", monospace;
+  color: #f2f597;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(#492e87, #0a1d56);
+}
+
+img {
+  width: 100%;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: repeat(2, 125vh);
+  grid-template-areas:
+    "hello hello"
+    "my-name-is prateek";
+  /* margin-bottom: 150vh; */
+  column-gap: 40px;
+  padding-left: 1rem;
+  margin-bottom: 100vh;
+}
+
+.intro-1 {
+  align-self: center;
+  grid-area: hello;
+  position: sticky;
+  top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.intro-2 {
+  grid-area: my-name-is;
+  position: sticky;
+  top: 0rem;
+  align-self: center;
+  top: 3.5rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.intro-3 {
+  grid-area: prateek;
+  align-self: flex-end;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.about-me {
+  margin-bottom: 150vh;
+  color: #ffffff;
+  font-size: 30px;
+  padding-left: 1rem;
+  text-align: center;
+  font-size: 40px;
+}
+
+.about-me > p {
+  margin-bottom: 100vh;
+}
+
+.journey {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "text imgs";
+}
+
+.journey > p {
+  grid-area: text;
+  position: sticky;
+  top: 20vh;
+  align-self: start;
+}
+
+.journey .images {
+  width: 60%;
+  grid-area: imgs;
+  margin-top: 60vh;
+  background: rgba(#fff, 1);
+  padding: 0.3rem;
+}
